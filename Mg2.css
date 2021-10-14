@@ -1,0 +1,57 @@
+body{
+
+	background-image: url("bg1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+.border{
+	border: 8px outset #808080;
+}
+.nav{
+    background-image: url("nav.png");
+    padding: 20px 10px;
+    box-shadow: -3px -3px 2px #666600;
+    background-size: cover;
+
+
+}
+.nav a{
+    color: whitesmoke;
+    padding: 15px;
+}
+.konten{
+    display: flex;
+    color: black;
+
+}
+.biodata{
+	box-shadow: -3px -3px 2px #808080;
+    text-align:center;
+    font-size: 10pt;
+    line-height: 40px;
+    font-style: bold;
+    text-decoration: none;
+    color: white;
+    background-image: url("bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.news{
+	box-shadow: -3px -3px 2px #808080;
+    text-align: center;
+    background-image: url("bg2.jpg");
+    background-size: cover;
+    color: black;
+    background-repeat: no-repeat;
+}
+
+
+footer{
+    background-image: url("nav.png");
+    text-align: center;
+    font-size: 26pt;
+    background-size: cover;
+}
