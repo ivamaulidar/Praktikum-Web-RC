@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minggu 3</title>
+</head>
+<body id="body">
+    <label for="latar">Select Theme :</label>
+    <select name="latar" id="latar" onchange="tema()">
+    <option value="light">Light</option>
+    <option value="dark">Dark</option>
+</select>
+<script>
+    function tema(){
+        var tampungwarna=document.getElementById("latar");
+
+        if(tampungwarna.value=="light"){
+            document.body.style.backgroundColor = "white";
+            document.getElementById("body").style.color = "black";
+        }else{
+            document.body.style.backgroundColor = "black";
+            document.getElementById("body").style.color = "white";
+        }
+
+    }
+</script>
+
+    <h1>Welcome</h1>
+
+    <label for="agent">Select Your Agents</label>
+    <select name="agent" id="agent" onchange="valo()">
+        <option value="sage">sage</option>
+        <option value="omen">omen</option>
+        <option value="reyna">reyna</option>
+        <option value="viper">viper</option>
+        <option value="jett">jett</option>
+        <option value="skye">skye</option>
+    </select>
+    <p id="tampil"></p>
+    <script>
+        function valo(){
+            var pilihagent=document.getElementById("agent");
+
+            if(pilihagent.value=="sage"){
+                var agentsvalo=document.getElementById("tampil");
+                agentsvalo.innerText = "Sage merupakan sentinel";
+            }else if(pilihagent.value=="omen"){
+                var agentsvalo=document.getElementById("tampil");
+                agentsvalo.innerText = "Omen merupakan controller";
+            }else if(pilihagent.value=="reyna"){
+                var agentsvalo=document.getElementById("tampil");
+                agentsvalo.innerText = "Reyna merupakan duelist";
+            }else if(pilihagent.value=="viper"){
+                var agentsvalo=document.getElementById("tampil");
+                agentsvalo.innerText = "Viper merupakan controller";
+            }else if(pilihagent.value=="jett"){
+                var agentsvalo=document.getElementById("tampil");
+                agentsvalo.innerText = "Jet merupakan duelist";
+            }else if(pilihagent.value="skye"){
+                var agentsvalo=document.getElementById("tampil");
+                agentsvalo.innerText = "Skye merupakan initiator";
+            }
+        }
+    </script>
+
+<h2>Pengecekan Faktorial</h2>
+<h2>Masukan Angka: </h2>
+<input type="number" name="angka" id="num">
+<button type="submit" onclick="faktorial()">Periksa</button>
+
+<script>
+    function faktorial(){
+        var faktor = document.getElementById("num");
+
+          let hasil = 1;
+          if (faktor.value == 0){
+            hasil = 0;
+          }else if(faktor.value == 1){
+              hasil=1;
+          }else{
+            for(var i = faktor.value; i >= 1; i--){
+              hasil = hasil * i;
+            }
+          }
+         
+        var result = document.getElementById("hasil");
+            result.innerText = "hasilnya " + hasil;
+    }
+        
+</script>
+
+<p id="hasil"></p>
+
+
+</body>
+</html>
