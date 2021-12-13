@@ -1,18 +1,10 @@
 # Praktikum-Web-RC
-Kumpulkan tugas kalian _bisa_ dengan cara: 
-1. fork repository ini 
-2. clone hasil fork repository
-3. Buat branch baru dengan nama sesuai minggu pertemuan, contoh:
-    > minggu1
- 
- (kerjakan-selesai) 
-1. hasil tugas kalian push ke github
+hasil tugas kalian push ke github
 
-:bangbang:
-jangan lupa tambahkan hasil screenshoot web di dalam file
-
-<hr>
-
+Merapihkan kode untuk tampilan, dengan membuat file :
+home.css
+index.css
+500.css
 ### Tambahkan identitas dasar di sini: 
 
 Nama  :Iva Maulida Rahmawati
